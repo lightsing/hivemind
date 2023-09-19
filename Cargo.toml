@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "bee",
+    "hivectl",
+    "pheromone",
+    "queen"
+]
+resolver = "2"

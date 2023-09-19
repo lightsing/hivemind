@@ -1,0 +1,13 @@
+[package]
+name = "hive-bee"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = { version = "1", features = ["backtrace"] }
+bollard = "0.14"
+pheromone = { path = "../pheromone", features = ["bee-server", "queen-client"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

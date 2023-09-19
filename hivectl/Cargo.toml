@@ -1,0 +1,10 @@
+[package]
+name = "hivectl"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = { version = "1", features = ["backtrace"] }
+clap = { version = "4", features = ["derive"] }
+pheromone = { path = "../pheromone", features = ["hive-client"] }

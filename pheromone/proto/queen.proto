@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+package queen;
+
+message BeeConfig {
+
+}
+
+message BeeStatus {
+
+}
+
+message Job {
+
+}
+
+service Queen {
+  rpc GetBeeConfig(google.protobuf.Empty) returns (BeeConfig);
+  rpc ReportBeeStatus(BeeStatus) returns (google.protobuf.Empty);
+  rpc GetJob(google.protobuf.Empty) returns (Job);
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+package hive;
+
+message HiveVersion {
+    string version = 1;
+}
+
+service Hive {
+    rpc GetVersion(google.protobuf.Empty) returns (HiveVersion);
+}
