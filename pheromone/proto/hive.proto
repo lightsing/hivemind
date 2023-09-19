@@ -1,10 +1,20 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "common.proto";
 package hive;
 
 message HiveVersion {
     string version = 1;
+}
+
+message CreateJobGroupRequest {
+    string name = 1;
+    Affinity affinity = 2;
+}
+
+message CreateJobGroupResponse {
+    string id = 1;
 }
 
 service Hive {
